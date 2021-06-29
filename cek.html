@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My Cutie Pie 🥪 </title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+  <style>
+  body,html{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+    .flex{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .flex2{
+      display: flex;
+      justify-content: center;
+    }
+    .size{
+      width: 33.3333333%;
+    }
+    .sec1{
+  background-image: radial-gradient(circle at 50% -20.71%, #de9c2c 0, #e5922a 8.33%, #ea852b 16.67%, #ee772d 25%, #f16731 33.33%, #f35436 41.67%, #f23c3c 50%, #f01843 58.33%, #ed004c 66.67%, #e90057 75%, #e30064 83.33%, #db0071 91.67%, #d10080 100%);
+    }
+    .sec2{
+    background-image: radial-gradient(circle at 50% -20.71%, #e6f58f 0, #e9eb7f 10%, #ecdf6e 20%, #efd25d 30%, #f1c44d 40%, #f2b53c 50%, #f3a52d 60%, #f59522 70%, #f8851d 80%, #fa741e 90%, #fc6324 100%);
+    }
+    .sec3{
+      background: rgb(217,217,217);
+background: linear-gradient(90deg, rgba(217,217,217,1) 0%, rgba(255,255,255,1) 47%, rgba(242,253,255,1) 100%);
+    }
+    .btn-primary{
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+    background-image: linear-gradient(to right bottom, #4affa1, #63fb85, #7bf768, #92f146, #a8eb12);
+      transition: all 1s;
+    }
+    .btn-primary:hover{
+      background-image: linear-gradient(to right, #1bffd1, #49ffff, #a7fdff, #e6faff, #ffffff);
+    }
+    img{
+      border-radius: 15px;
+    }
+  </style>
+  <link
+   rel="stylesheet"
+   href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+ />
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(".btn").click(function(){
+    $("img").addClass("animate__animated");
+  });
+});
+$(document).ready(function(){
+  $(".btn").click(function(){
+    $("h4").addClass("animate__animated");
+  });
+});
+$(document).ready(function(){
+  $(".btn").click(function(){
+    var element = document.getElementById('image1');
+    var element2 = document.getElementById('image2');
+    var element3 = document.getElementById('image3')
+    var element4 = document.getElementById('cuk')
+    element.style.display = null;
+    element2.style.display = null;
+    element3.style.display = null;
+    element4.style.display = null;
+  });
+});
+
+
+</script>
+</head>
+<body>
+  <script>
+        function play() {
+          var audio = document.getElementById("audio");
+          audio.play();
+        }
+  //       window.onload = function () {
+  //   document.getElementById("audio").play();
+  //   alert('Page Loaded')
+  // };
+
+</script>
+    <div class="">
+      <input type="button" class="btn btn-primary" value="Klik Aku" onclick="play()" style="width: 100%">
+      <audio id="audio" src="sezairi2.mp3"></audio>
+
+    </div>
+    <div style="width: 100%">
+      <h4 id="cuk" style="display: none; text-align: center;" class=" animate__fadeIn">Sini huggie beb 🤍 :)</h4>
+    </div>
+    <div class="container flex2" style="height: 100vh">
+
+      <div class="size sec1 flex">
+          <img src="meg1.jpg" alt="" width="100%" id="image3"  class=" animate__fadeInTopLeft" style="display: none">
+      </div>
+      <div class="size sec2 flex">
+          <img src="meg2.jpg" alt="" width="100%" id="image2"  class="animate__fadeInDown" style="display: none" >
+      </div>
+      <div class="size sec3 flex">
+          <img src="meg3.jpg" alt="" width="100%" id="image1" class="animate__fadeInTopRight" style="display: none">
+      </div>
+    </div>
+
+
+
+</body>
+</html>
